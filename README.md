@@ -34,17 +34,88 @@ This project was built while completing the official [Next.js documentation](htt
 ## 📂 Project Structure
 
 ```bash
-.
-├── app/                  # App Router (pages, layouts, routes)
-│   ├── dashboard/        # Example protected dashboard
-│   ├── lib/              # Database & server actions
-│   ├── ui/               # Reusable UI components
-│   └── layout.tsx        # Root layout
-├── public/               # Static assets
-├── styles/               # Global styles
-├── auth.config.ts        # NextAuth configuration
-├── next.config.js        # Next.js configuration
-└── README.md             
+├── app/
+│   ├── customer/
+│   │   └── page.tsx
+│   ├── dashboard/
+│   │   ├── (overview)/
+│   │   │   ├── loading.tsx
+│   │   │   └── page.tsx
+│   │   ├── customers/
+│   │   │   └── page.tsx
+│   │   ├── invoices/
+│   │   │   ├── [id]/
+│   │   │   │   └── edit/
+│   │   │   │       ├── not-found.tsx
+│   │   │   │       └── page.tsx
+│   │   │   ├── create/
+│   │   │   │   └── page.tsx
+│   │   │   ├── error.tsx
+│   │   │   └── page.tsx
+│   │   └── layout.tsx
+│   ├── lib/
+│   │   ├── actions.ts
+│   │   ├── data.ts
+│   │   ├── definitions.ts
+│   │   ├── placeholder-data.ts
+│   │   └── utils.ts
+│   ├── login/
+│   │   └── page.tsx
+│   ├── query/
+│   │   └── route.ts
+│   ├── seed/
+│   │   └── route.ts
+│   ├── ui/
+│   │   ├── customers/
+│   │   │   └── table.tsx
+│   │   ├── dashboard/
+│   │   │   ├── cards.tsx
+│   │   │   ├── latest-invoices.tsx
+│   │   │   ├── nav-links.tsx
+│   │   │   ├── revenue-chart.tsx
+│   │   │   └── sidenav.tsx
+│   │   ├── invoices/
+│   │   │   ├── breadcrumbs.tsx
+│   │   │   ├── buttons.tsx
+│   │   │   ├── create-form.tsx
+│   │   │   ├── edit-form.tsx
+│   │   │   ├── pagination.tsx
+│   │   │   ├── status.tsx
+│   │   │   └── table.tsx
+│   │   ├── acme-logo.tsx
+│   │   ├── button.tsx
+│   │   ├── fonts.ts
+│   │   ├── global.css
+│   │   ├── home.module.css
+│   │   ├── login-form.tsx
+│   │   ├── search.tsx
+│   │   └── skeletons.tsx
+│   ├── auth.ts
+│   ├── favicon.ico
+│   ├── layout.tsx
+│   ├── middleware.ts
+│   ├── opengraph-image.png
+│   └── page.tsx
+├── public/
+│   ├── customers/
+│   │   ├── amy-burns.png
+│   │   ├── balazs-orban.png
+│   │   ├── delba-de-oliveira.png
+│   │   ├── evil-rabbit.png
+│   │   ├── lee-robinson.png
+│   │   └── michael-novotny.png
+│   ├── hero-desktop.png
+│   └── hero-mobile.png
+├── .eslintrc.json
+├── .gitignore
+├── README.md
+├── auth.config.ts
+├── next.config.ts
+├── package.json
+├── pnpm-lock.yaml
+├── postcss.config.js
+├── tailwind.config.ts
+└── tsconfig.json
 ```
 
 ## Getting Started
