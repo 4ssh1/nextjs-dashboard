@@ -11,11 +11,11 @@ export const metadata: Metadata = {
 };
 
 export default async function Page(props: {
-  searchParams?:{
+  searchParams?: Promise<{
     query?: string;
-  };
+  }>
 }) {
-  const searchParams =  props.searchParams;
+  const searchParams = await props.searchParams;
   const query = searchParams?.query || '';
   const customers = await fetchFilteredCustomers(query);
 
