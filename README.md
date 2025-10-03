@@ -49,8 +49,8 @@ This project was built while completing the official [Next.js documentation](htt
 
 ## Getting Started
 ```bash
-git clone https://github.com/your-username/your-nextjs-project.git
-cd your-nextjs-project
+git clone https://github.com/4ssh1/nextjs-dashboard.git
+cd your-nextjs-dashboard
 ```
 
 ## Install Dependencies
